@@ -3,12 +3,14 @@ function cardStyle(){
   $('.card').css("margin","10px");
   $('.card').css("width","300px");
   $('.card').css("height","200px");
+  $('.card').css("position","relative");
   $('.card').css("border","1px solid black");
   $('.name').css("display","inline-block");
   $('.name').css("margin","10px");
   $('.name').css("font-size","24px");
-  $('.c').css("position","relative");
-  $('.c').css("top","30px");
+  $('.c').css("position","absolute");
+  $('.c').css("bottom","10px");
+  $('.c').css("left","80px");
   $('.descrip').css("display","none");
 
 }
@@ -16,7 +18,7 @@ function cardStyle(){
 cardStyle();
 
 $(document).on('click','.card',function(){
-  $(this).children().toggle(500);
+  $(this).children().toggle('slow');
 })
 
 $('button').click(function(){
