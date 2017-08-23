@@ -1,0 +1,13 @@
+
+#information{
+  width: 600px;
+  display: inline-block;
+}
+#name{
+  margin: 20px;
+}
+#card_area{
+  vertical-align: top;
+  display: inline-block;
+  width: 400px;
+}
